@@ -3,7 +3,7 @@ from manim import *
 class FluidFlow(Scene):
     def construct(self):
         # Define vector field (e.g., sinusoidal flow)
-        func = lambda pos: np.sin(pos[0]/2) * UR + np.cos(pos[1]/2) * LEFT
+        func = lambda pos: np.cos(pos[0]/2) * UR + np.tan(pos[1]/2) * LEFT
         
         # Configure streamlines
         stream_lines = StreamLines(
